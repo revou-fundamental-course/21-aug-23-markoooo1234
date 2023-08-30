@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | RevoU</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&family=Poppins:wght@400;500;700&family=Ruwudu:wght@500&family=Staatliches&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+<!-- Navbar Start -->
+    <nav class="navbar animate__animated animate__fadeInDown" id="navbar">
+        <a href="#" class="navbar-logo"><img src="asset/img/logo revou.png" alt="Revou"></a>
+        <div class="navbar-nav">
+            <a href="#home">Home</a>
+            <a href="#about">Our Profile</a>
+            <a href="#menu">Achievement</a>
+            <a href="#contact">Message Us</a>
+        </div>
+    </nav>
+<!-- Navbar End -->
+
+<!-- hero section start -->
+<section class="hero" id="home">
+    <main class="content">
+        <h1 class="animate__animated animate__fadeInUp animate__delay-1s">Hi <span id="name"></span>, Welcome To Website Edu<span class="beda">IT</span></h1>
+        <p class="animate__animated animate__fadeInRight animate__delay-1s">Our Information Technology School is a center of excellence for learning and innovation in the digital age. We are determined to equip students with relevant knowledge and skills to face current and future technological challenges.</p>
+        <a href="#" class="cta animate__animated animate__fadeInLeft animate__delay-1s ">View Portofolio </a>
+    </main>
+</section>
+<!-- hero section end -->
+
+<!-- about section start -->
+<section class="about" id="about">
+    <h2><span>Our</span> Profile</h2>
+    <div class="row">
+        <div class="about-img">
+            <img class="img-slideshow" src="asset/img/std1.jpg" alt="tentangkami">
+            <img class="img-slideshow" src="asset/img/studets.jpg" alt="tentangkami">
+            <img class="img-slideshow" src="asset/img/gedung sekolah.jpg" alt="tentangkami">
+            <div><button class="btn1"  onclick="plusDivs(-1)"> < </button>
+            <button class="btn2"  onclick="plusDivs(1)"> > </button></div>
+        </div>
+        <div class="content">
+            <h3>Visi</h3>
+            <p>Becoming an Information Technology Study Program through the development of Cyber ​​Security and Internet-based Technology (Internet of things) that supports the sustainable development of Smart City until 2030.</p>
+            <h3>Misi</h3>
+            <p>The mission of the Information Technology Department includes aspects of education, research, and community service (Tridharma Perguruan Tinggi), namely:</p>
+            <ol>
+                <li>Organizing Information Technology education and teaching using an adaptive curriculum, future-oriented and supported by quality Human Resources and adequate facilities.</li>
+                <li>
+                    Carry out quality research in the field of Cybersecurity and Internet of Things for Smart City technology.</li>
+            </ol>
+        </div>
+    </div>
+</section>
+<!-- about section end -->
+
+<!-- menu section start-->
+<section id="menu" class="menu">
+    <h2><span>Our</span> Facilitation</h2>
+    <p>We are proud to provide modern and complete facilities designed to meet your needs. From classrooms to laboratories, each of our facilities is supported by the latest technology.</p>
+    <div class="row">
+        <div class="menu-card">
+            <img src="asset/img/lecture1.png" alt="latte" class="menu-card-img">
+            <h3 class="menu-card-title">Profesional Teacher</h3>
+            <p class="menu-card-price">Our instructors are highly professional and experienced individuals in their respective fields. They have a strong commitment to providing the best learning experience to our students.</p>
+        </div>
+        <div class="menu-card">
+            <img src="asset/img/sport.png" alt="latte" class="menu-card-img">
+            <h3 class="menu-card-title">Sport Field</h3>
+            <p class="menu-card-price">Our Sport Center offers modern and complete facilities designed to meet your sporting needs. From sports fields to high-quality gyms, we have everything you need.</p>
+        </div>
+        <div class="menu-card">
+            <img src="asset/img/classroom.png" alt="latte" class="menu-card-img">
+            <h3 class="menu-card-title">Classroom</h3>
+            <p class="menu-card-price"> Our classrooms are created as environments that inspire and support learning. With a modern and comfortable design, our students can focus fully on their academic advancement.</p>
+        </div>
+        <div class="menu-card">
+            <img src="asset/img/laboratory.png" alt="latte" class="menu-card-img">
+            <h3 class="menu-card-title">laboratory</h3>
+            <p class="menu-card-price">
+                Our laboratory is a place of innovation and discovery, equipped with the best facilities to support experimentation and research in various fields.</p>
+        </div>
+        <div class="menu-card">
+            <img src="asset/img/canteen.png" alt="latte" class="menu-card-img">
+            <h3 class="menu-card-title">Canteen</h3>
+            <p class="menu-card-price">Our canteen serves quality food that combines great taste with nutritional value. Providing a wide selection of food and beverages, we ensure every visit to our canteen is a satisfying experience.</p>
+        </div>
+    </div>
+</section>
+<!-- menu section end-->
+
+    <!-- contact section start -->
+    <section id="contact" class="contact">
+        <h2>Message <span>Us</span></h2>
+        <p>
+            We'd love to hear from you! Whether you have a question, suggestion or information you need to share, our team is ready to receive your message and provide a quick and helpful response.</p>
+        <div class="row">
+            <form name="message-form" onsubmit="return validateForm()">
+                <p class="name">Your Name :</p>
+                <div class="input-group"> 
+                    <input type="text" placeholder="Name" name="full-name">
+                </div>
+                <p class="birth">Your Birthdate :</p>
+                <div class="input-group">
+                    <input type="date" name="birth-date"/>
+                </div>
+                <p class="sex">Sex :</p>
+                <label class="container">Male
+                    <input type="radio" id="male" checked="checked" name="gender" value="Male" >
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Female
+                    <input type="radio" id="female" name="gender" value="female" >
+                    <span class="checkmark"></span>
+                </label>
+                <p class="message">Message :</p>
+                <textarea class="subject" name="messages"  placeholder="Write something.." style="height:200px"></textarea>  
+                <input type="submit" value="Submit">
+            </form>
+            <form>
+            <div class="text-box">
+                <p>Name : <span id="sender-full-name"></span></p>
+                <p>Birthdate : <span id="sender-birth-date"></span></p>
+                <p>Gender : <span id="sender-gender"></span></p>
+                <p>Message : <span id="sender-messages"></span></p>
+            </div>
+        </form>
+        </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- footer start-->
+    <footer>
+        <div class="socials">
+            <a href="#"><img src="asset/img/instagram.png" alt=""></a>
+            <a href="#"><img src="asset/img/facebook.png" alt=""></a>
+            <a href="#"><img src="asset/img/linkedin.png" alt=""></a>
+            <a href="#"><img src="asset/img/tiktok (1).png" alt=""></a>
+        </div>
+
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">Our Profile</a>
+            <a href="#menu">Our Facilities</a>
+            <a href="#contact">Message Us</a>
+        </div>
+        <div class="credit">
+            <p>Created by <a href="">Naufal Rifandri | RevoU</a>. | &copy; 2023.</p>
+        </div>
+        
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
